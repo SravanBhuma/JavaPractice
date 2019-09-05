@@ -7,6 +7,7 @@ import java.util.Iterator;
 
 public class ArrayInitialization 
 {
+	
 	public static void main(String[] args)
 	{
 		ArrayList<Integer> example1 = new ArrayList<Integer>(Arrays.asList(3,4,2,5,1));
