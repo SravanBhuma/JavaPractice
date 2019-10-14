@@ -1,6 +1,7 @@
 package com.set.examples;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class HashSetExample1 
 {
@@ -22,5 +23,19 @@ public class HashSetExample1
 	     hset.clear();
 	     // Display HashSet content again
 	     System.out.println("After: HashSet contains: "+ hset);
+	     
+	     LinkedHashSet<String> hset2 = new LinkedHashSet<String>();
+	     hset2.add("Element1");
+	     hset2.add("Element2");
+	     hset2.add("Element3");
+	     hset2.add("Element4");
+	     hset2.add("Element5");
+	     hset2.add(null);
+	     System.out.println("Before: LinkedHashSet contains: "+ hset2);
+	     
+	     
+	     
+	     
+	     
 	  }
 }

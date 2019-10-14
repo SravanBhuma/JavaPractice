@@ -12,12 +12,18 @@ public class ArrayInitialization
 	{
 		
 		ArrayList<Integer> example1 = new ArrayList<Integer>(Arrays.asList(3,4,2,5,1));
+		ArrayList<Integer> example3 = new ArrayList<Integer>(Arrays.asList(3,4,2,5,1));
+		System.out.println(example1.equals(example3));
 		Collections.sort(example1);
 		System.out.println("example1 ArrayList:"+ example1);
 		
-		ArrayList<Integer> example3 = new ArrayList<Integer>(Arrays.asList(3,4,2,5,1));
+		
+		
+		
 		Collections.sort(example3, Collections.reverseOrder());
 		System.out.println("example3 ArrayList:"+ example3);
+		
+		
 		 
 
 
@@ -36,6 +42,7 @@ public class ArrayInitialization
 		
 		example3.remove(10);
 		System.out.println("example3 ArrayList:"+ example3);
+		
 		
 		System.out.println("Last occurrence of element 5 in ArrayList: "+example3.lastIndexOf(5));
 		System.out.println("First occurrence of element 5 in ArrayList: "+example3.indexOf(5));

@@ -1,7 +1,11 @@
 package com.java8;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.function.Consumer;
 
 public class ForEachConsumerInterface 
@@ -25,6 +29,26 @@ public class ForEachConsumerInterface
 				list.forEach(action2);
 				list.forEach(action3);
 				list.forEach(str->System.out.println(str));
+
+
+				
+				HashMap<Integer, String> map= new HashMap<>();
+				map.put(1, "One");
+				map.put(2, "Two");
+				Set<Entry<Integer, String>> mapEntry= map.entrySet();
+				System.out.println(mapEntry);
+				for(Map.Entry<Integer, String> entry:map.entrySet())
+				{
+					System.out.println("Key is: "+entry.getKey());
+					System.out.println("Key is: "+entry.getValue());
+					
+				}
+				map.entrySet().forEach(System.out::println);
+				map.keySet().forEach(System.out::println);
+				map.values().forEach(System.out::println);
+				
+				
+			
 	}
 
 }
